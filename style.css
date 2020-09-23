@@ -132,6 +132,7 @@ body {
     height: 50vh;
     margin: 25vh auto;
     display: block;
+    z-index: 8;
 }
 
 /*IDS*/
