@@ -3,25 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>NYAZELI RECORDS</title>
+    <script defer src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="resources/images/favicon.png">
-    <script src="script.js"></script>
 </head>
 <body>
+    <div id="about" class="big" style="visibility: hidden" onclick="close_content(this);">
+        <div class="content">
+
+        </div>
+    </div>
+
+    <div id="contact" class="big" style="visibility: hidden" onclick="close_content(this);">
+        <div class="content">
+            <img src="resources/images/nyazeli.png" style="height:100%; width: auto">
+            <p class="center" style="float:right">poop</p>
+        </div>
+    </div>
+
     <div id="tp">
         <img class="center" style="height: auto; max-height: 87%" src="resources/images/logo.png">
         <div id="links" style="height: 20px" class="center">
-            <a href="/#about" style="padding-right: 20px">ABOUT</a>
-            <a href="/#contact" style="padding-left: 20px">CONTACT</a>
+            <a href="#about" style="padding-right: 20px" onclick="open_content(this);">ABOUT</a>
+            <a href="#contact" style="padding-left: 20px" onclick="open_content(this);">CONTACT</a>
         </div>
     </div>
     <div id="vtubers">
-        <div id="emptyr" class="parallel vtuber" style="background: #1D1B1D; width: 10vw"></div>
+        <div id="empty" class="parallel vtuber" style="background: #1D1B1D; width: 10vw"></div>
 
         <div id="lamork" class="parallel vtuber" onclick="anim(this);">
-            <div style="background: #7238A9; height: 100%; width: 1vw; float: left"></div>
+            <div class="colour" style="background: #7238A9"></div>
 
-            <div style="background: #1D1B1D; height: 100%; width: 3vw; float: left">
+            <divc class="tab">
                 <p class="sideways">LAMORK</p>
 
                 <div class="img-links">
@@ -31,13 +46,18 @@
                     <a href="https://www.twitter.com/nyamork"><img class="center img-link" src="resources/images/twitter.png"></a>
                     <a href="https://www.twitch.tv/lamork"><img class="center img-link" src="resources/images/twitch.png"></a>
                 </div>
+            </divc>
+
+            <div class="bio">
+                <p class="center">what is up gamers im nyamork</p>
+                <img class="imgtuber" src="resources/images/lamork.png">
             </div>
         </div>
 
         <div id="tipanya" class="parallel vtuber" onclick="anim(this)">
-            <div style="background: #D29B9B; height: 100%; width: 1vw; float: left"></div>
+            <div class="colour" style="background: #D29B9B"></div>
 
-            <div style="background: #1D1B1D; height: 100%; width: 3vw; float: left">
+            <div class="tab">
                 <p class="sideways">TIPANYA</p>
 
                 <div class="img-links">
@@ -46,39 +66,57 @@
                     <a href="https://www.twitch.tv/tipanya"><img class="center img-link" src="resources/images/twitch.png"></a>
                 </div>
             </div>
+
+            <div class="bio">
+                <p class="center">oh my gao!!!</p>
+                <img class="imgtuber" src="resources/images/tipanya.png">
+            </div>
         </div>
 
-        <div id="chenna" class="parallel vtuber">
-            <div style="background: #1645C6; height: 100%; width: 1vw; float: left"></div>
+        <div id="chenna" class="parallel vtuber" onclick="anim(this)">
+            <div class="colour" style="background: #1645C6"></div>
 
-            <div style="background: #1D1B1D; height: 100%; width: 3vw; float: left">
+            <div class="tab">
                 <p class="sideways">CHENNA</p>
                 <div class="img-links">
                     <a href="https://www.twitter.com/_chenna_"><img class="center img-link" src="resources/images/twitter.png"></a>
                     <a href="https://www.twitch.tv/chennakitty"><img class="center img-link" src="resources/images/twitch.png"></a>
                 </div>
             </div>
+
+            <div class="bio">
+                <p class="center">chennaDinner</p>
+                <img class="imgtuber" src="resources/images/chenna.png">
+            </div>
         </div>
 
         <div id="teru" class="parallel vtuber" onclick="anim(this);">
-            <div style="background: #FFC02A; height: 100%; width: 1vw; float: left"></div>
+            <div class="colour" style="background: #FFC02A"></div>
 
-            <div style="background: #1D1B1D; height: 100%; width: 3vw; float: left">
+            <div class="tab">
                 <p class="sideways">TERU</p>
                 <div class="img-links">
                     <a href="https://www.twitter.com/terupancake"><img class="center img-link" src="resources/images/twitter.png"></a>
                     <a href="https://www.twitch.tv/terupancake"><img class="center img-link" src="resources/images/twitch.png"></a>
                 </div>
             </div>
+
+            <div class="bio">
+                <p class="center">hamSmash</p>
+                <img class="imgtuber center" src="resources/images/teru.png">
+            </div>
         </div>
 
-        <div id="info" class="parallel vtuber">
-            <div style="background: #1D1B1D; height: 100%; width: 3vw; float: left"> </div>
+        <div id="info" class="parallel vtuber" style="width: 13vw">
+            <div class="colour" style="background: whitesmoke; float: right"></div>
 
-            <div style="background: whitesmoke; height: 100%; width: 1vw; float: left"></div>
+            <div style="height: 100%; width: 1vw; max-width: 85px; float: right"> </div>
+
+            <a class="twitter-timeline" data-width="5vw" data-height="100%" data-theme="dark" data-chrome="noscrollbar transparent nofooter" href="https://twitter.com/nyamork?ref_src=twsrc%5Etfw">Tweets by Nyazeli Records</a>
+
         </div>
 
-        <div id="emptyl" class="parallel vtuber" style="background: #1D1B1D; width: 10vw"></div>
+        <div class="parallel vtuber" style="background: #1D1B1D; width: 10vw; position: absolute; left: -5vw; z-index: 1;"></div>
     </div>
     <div id="btm">
         <p class="center" style="font-size: 11px">© NYAZELI RECORDS</p>
