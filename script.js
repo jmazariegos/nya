@@ -42,3 +42,8 @@ function close_content(e){
     $this.css("visibility", "hidden");
     window.history.pushState("", "", "/nya/");
 }
+
+//STOPS ABOUT / CONTACT CONTENT FROM SETTING OFF THE OUTER EXIT FUNCTION
+$(".content").on("click", function (event) {
+    event.stopPropagation();
+});
