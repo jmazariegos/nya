@@ -104,7 +104,8 @@ body {
 
 .imgtuber {
     transform: skew(5deg);
-    width: 50%;
+    width: auto;
+    max-height: 80%;
     position: absolute;
     margin-left: 25%;
     margin-right: 25%;
@@ -142,9 +143,9 @@ body {
 }
 
 #vtubers {
-    margin-top: 0.1vh;
+    margin-top: 5px;
     width: 100vw;
-    height: 81vh;
+    height: calc(81vh - 5px);
     overflow: hidden;
     position: relative;
 }
