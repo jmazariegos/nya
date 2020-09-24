@@ -41,3 +41,20 @@ function close_content(e){
     $this.css("animation", "fade_out 0.5s forwards");
     $this.css("visibility", "hidden");
 }
+
+//STUFF ON PAGELOAD
+let link = window.location.href;
+let click = new Event('click');
+if(link.endsWith("#about")){
+    $button = document.getElementById("about_button");
+    $button.dispatchEvent(click);
+}else if(link.endsWith("#contact")){
+    $button = document.getElementById("contact_button");
+    $button.dispatchEvent(click);
+}
+
+
+//STOPS ABOUT / CONTACT CONTENT FROM SETTING OFF THE OUTER EXIT FUNCTION
+$(".content").on("click", function (event) {
+    event.stopPropagation();
+});

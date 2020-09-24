@@ -55,10 +55,10 @@ body {
 }
 
 .img-link {
-    width: 1.7vw;
-    padding-bottom: 1vh;
-    padding-left: 0.4vw;
-    padding-right: 0.4vw;
+    width: 30px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .img-links {
@@ -69,17 +69,17 @@ body {
 }
 
 .vtuber {
-    width: 40vw;
-    display: block;
-    position: absolute;
+    width: auto;
+    max-width: 50px;
+    display: inline-block;
+    position: relative;
     background: #1D1B1D;
-    right: 0vw;
+    right: 0;
 }
 
 .colour {
     height: 100%;
-    width: 0.7vw;
-    max-width: 10px;
+    width: 10px;
     float: left;
 }
 
@@ -89,14 +89,14 @@ body {
 
 .tab {
     height: 100%;
-    width: 2.5vw;
+    width: 40px;
     max-width: 114px;
     float: left;
 }
 
 .bio {
     height: 100%;
-    width: 36vw;
+    width: 440px;
     float: left;
     position: relative;
     opacity: 0;
@@ -104,17 +104,17 @@ body {
 
 .imgtuber {
     transform: skew(5deg);
-    width: 50%;
+    width: 70%;
     position: absolute;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 15%;
+    margin-right: 15%;
     bottom: 0;
 }
 
 .twitter-timeline {
-    float: right;
-    width: 9vw !important;
-    min-width: 160px !important;
+    float: left;
+    transform: skew(5deg);
+    position: absolute;
 }
 
 .big {
@@ -142,9 +142,10 @@ body {
 }
 
 #vtubers {
-    margin-top: 0.1vh;
-    width: 100vw;
-    height: 81vh;
+    margin-top: 5px;
+    width: 100%;
+    display: inline-block;
+    height: calc(81vh - 5px);
     overflow: hidden;
     position: relative;
 }
@@ -160,27 +161,24 @@ body {
 }
 
 #lamork {
-    right: -32vw;
     z-index: 4;
 }
 
 #tipanya {
-    right: -28.8vw;
     z-index: 3;
 }
 
 #chenna {
-    right: -25.6vw;
     z-index: 2;
 }
 
 #teru {
-    right: -22.5vw;
     z-index: 1;
 }
 
 #info {
-    min-width: 200px !important;
+    width: 230px !important;
+    display: block;
     left: 0vw;
     z-index: 2;
 }
@@ -206,11 +204,11 @@ body {
 
 @keyframes open_animation {
     0% {transform: translateX(0vw) skew(175deg);}
-    100% {transform: translateX(-30vw) skew(175deg);}
+    100% {transform: translateX(-20vw) skew(175deg);}
 }
 
 @keyframes close_animation {
-    0% {transform: translateX(-30vw) skew(175deg);}
+    0% {transform: translateX(-20vw) skew(175deg);}
     100% {transform: translateX(0vw) skew(175deg);}
 }
 
