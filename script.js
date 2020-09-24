@@ -40,4 +40,5 @@ function close_content(e){
     let $this = $(e);
     $this.css("animation", "fade_out 0.5s forwards");
     $this.css("visibility", "hidden");
+    window.history.pushState("", "", "/nya/");
 }

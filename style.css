@@ -105,7 +105,7 @@ body {
 .imgtuber {
     transform: skew(5deg);
     width: auto;
-    max-height: 80%;
+    max-height: 75%;
     position: absolute;
     margin-left: 25%;
     margin-right: 25%;
@@ -113,7 +113,8 @@ body {
 }
 
 .twitter-timeline {
-    float: right;
+    transform: skew(5deg);
+    float: left;
     width: 9vw !important;
     min-width: 160px !important;
 }
