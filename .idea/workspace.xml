@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a939b3d-5a63-494c-b341-7c80b1c5eb0b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,7 +62,7 @@
       <workItem from="1600232584409" duration="4559000" />
       <workItem from="1600543145315" duration="11566000" />
       <workItem from="1600662485597" duration="19903000" />
-      <workItem from="1602350280627" duration="3984000" />
+      <workItem from="1602350280627" duration="4166000" />
     </task>
     <task id="LOCAL-00001" summary="tabs changed to glow on hover, about and contact buttons work now, twitter added">
       <created>1600891760778</created>
