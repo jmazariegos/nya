@@ -23,11 +23,11 @@ body, p, h1, h2, h3, h4, label, a {
     margin: auto auto auto auto;
 }
 
-body {
+html, body {
     width: 100%;
     height: 100%;
     display: inline-block;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 /*DESKTOP*/
