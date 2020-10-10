@@ -10,114 +10,123 @@
     <link rel="icon" type="image/png" href="resources/images/favicon.png">
 </head>
 <body>
-    <div id="about" class="big" style="visibility: hidden" onclick="close_content(this);">
-        <div class="content">
-            <img src="resources/images/icon.png">
-            <p class="center">We are Nyazeli Records, a western Vtuber Agency, run by Mr. Nyazeli. Currently we are not taking any applications.</p>
-        </div>
-    </div>
-
-    <div id="contact" class="big" style="visibility: hidden" onclick="close_content(this);">
-        <div class="content">
-            <img src="resources/images/nyazeli.png">
-            <p class="center">Sorry but Mr. Nyazeli is not taking any emails or messages, he will contact you if you are going to be recruited for now.</p>
-        </div>
-    </div>
-
-    <div id="tp">
-        <img class="center" style="height: auto; max-height: 87%" src="resources/images/logo.png">
-        <div id="links" style="height: 20px" class="center">
-            <a href="#about" id="about_button" style="padding-right: 20px" onclick="open_content(this);">ABOUT</a>
-            <a href="#contact" id="contact_button" style="padding-left: 20px" onclick="open_content(this);">CONTACT</a>
-        </div>
-    </div>
-    <div id="vtubers">
-        <div id="empty" class="parallel vtuber" style="background: #1D1B1D; width: 10vw"></div>
-
-        <div id="lamork" class="parallel vtuber" onclick="anim(this);">
-            <div class="colour" style="background: #7238A9"></div>
-
-            <divc class="tab">
-                <p class="sideways">LAMORK</p>
-
-                <div class="img-links">
-                    <a href="https://discord.gg/eGP55bD" target="_blank"><img class="center img-link" src="resources/images/discord.png"></a>
-                    <a href="http://instagram.com/nyamork_ch" target="_blank"><img class="center img-link" src="resources/images/instagram.png"></a>
-                    <a href="https://www.youtube.com/c/Lamork/" target="_blank"><img class="center img-link" src="resources/images/youtube.png"></a>
-                    <a href="https://www.twitter.com/nyamork" target="_blank"><img class="center img-link" src="resources/images/twitter.png"></a>
-                    <a href="https://www.twitch.tv/lamork" target="_blank"><img class="center img-link" src="resources/images/twitch.png"></a>
+        <div id="about" class="big" style="visibility: hidden" onclick="close_content(this);">
+            <div class="content">
+                <div class="middle">
+                    <img src="resources/images/icon.png">
+                    <p class="center">We are Nyazeli Records, a western Vtuber Agency, run by Mr. Nyazeli. Currently we are not taking any applications.</p>
                 </div>
-            </divc>
-
-            <div class="bio">
-                <p class="center">Double avatar Vtuber and UTAU, watch him play cool old games and sing songs (sometimes)</p>
-                <img class="imgtuber" src="resources/images/lamork.png">
             </div>
         </div>
 
-        <div id="tipanya" class="parallel vtuber" onclick="anim(this)">
-            <div class="colour" style="background: #D29B9B"></div>
+        <div id="contact" class="big" style="visibility: hidden" onclick="close_content(this);">
+            <div class="content">
+                <div class="middle">
+                    <img src="resources/images/nyazeli.png">
+                    <p class="center">Sorry but Mr. Nyazeli is not taking any emails or messages, he will contact you if you are going to be recruited for now.</p>
+                </div>
+            </div>
+        </div>
 
-            <div class="tab">
-                <p class="sideways">TIPANYA</p>
+        <div id="tp">
+            <img class="center" style="height: auto; max-height: 87%" src="resources/images/logo.png">
+            <div id="links" style="height: 20px" class="center">
+                <a href="#about" id="about_button" style="padding-right: 20px" onclick="open_content(this);">ABOUT</a>
+                <a href="#contact" id="contact_button" style="padding-left: 20px" onclick="open_content(this);">CONTACT</a>
+            </div>
+        </div>
 
-                <div class="img-links">
-                    <a href="https://discord.gg/rTeRcRt" target="_blank"><img class="center img-link" src="resources/images/discord.png"></a>
-                    <a href="https://www.twitter.com/tipanya_" target="_blank"><img class="center img-link" src="resources/images/twitter.png"></a>
-                    <a href="https://www.twitch.tv/tipanya" target="_blank"><img class="center img-link" src="resources/images/twitch.png"></a>
+        <div id="mobile">
+
+        </div>
+
+        <div id="vtubers">
+            <div id="empty" class="parallel vtuber" style="background: #1D1B1D; width: 10vw"></div>
+
+            <div id="lamork" class="parallel vtuber" onclick="anim(this);">
+                <div class="colour" style="background: #7238A9"></div>
+
+                <divc class="tab">
+                    <p class="sideways">LAMORK</p>
+
+                    <div class="img-links">
+                        <a href="https://discord.gg/eGP55bD" target="_blank"><img class="center img-link" src="resources/images/discord.png"></a>
+                        <a href="http://instagram.com/nyamork_ch" target="_blank"><img class="center img-link" src="resources/images/instagram.png"></a>
+                        <a href="https://www.youtube.com/c/Lamork/" target="_blank"><img class="center img-link" src="resources/images/youtube.png"></a>
+                        <a href="https://www.twitter.com/nyamork" target="_blank"><img class="center img-link" src="resources/images/twitter.png"></a>
+                        <a href="https://www.twitch.tv/lamork" target="_blank"><img class="center img-link" src="resources/images/twitch.png"></a>
+                    </div>
+                </divc>
+
+                <div class="bio">
+                    <p class="center">Double avatar Vtuber and UTAU, watch him play cool old games and sing songs (sometimes)</p>
+                    <img class="imgtuber" src="resources/images/lamork.png">
                 </div>
             </div>
 
-            <div class="bio">
-                <p class="center">A bearcat Vtuber (real species) whos really good at video games and draws amazing MS Paint art!</p>
-                <img class="imgtuber" src="resources/images/tipanya.png">
-            </div>
-        </div>
+            <div id="tipanya" class="parallel vtuber" onclick="anim(this)">
+                <div class="colour" style="background: #D29B9B"></div>
 
-        <div id="chenna" class="parallel vtuber" onclick="anim(this)">
-            <div class="colour" style="background: #1645C6"></div>
+                <div class="tab">
+                    <p class="sideways">TIPANYA</p>
 
-            <div class="tab">
-                <p class="sideways">CHENNA</p>
-                <div class="img-links">
-                    <a href="https://www.twitter.com/_chenna_" target="_blank"><img class="center img-link" src="resources/images/twitter.png"></a>
-                    <a href="https://www.twitch.tv/chennakitty" target="_blank"><img class="center img-link" src="resources/images/twitch.png"></a>
+                    <div class="img-links">
+                        <a href="https://discord.gg/rTeRcRt" target="_blank"><img class="center img-link" src="resources/images/discord.png"></a>
+                        <a href="https://www.twitter.com/tipanya_" target="_blank"><img class="center img-link" src="resources/images/twitter.png"></a>
+                        <a href="https://www.twitch.tv/tipanya" target="_blank"><img class="center img-link" src="resources/images/twitch.png"></a>
+                    </div>
+                </div>
+
+                <div class="bio">
+                    <p class="center">A bearcat Vtuber (real species) whos really good at video games and draws amazing MS Paint art!</p>
+                    <img class="imgtuber" src="resources/images/tipanya.png">
                 </div>
             </div>
 
-            <div class="bio">
-                <p class="center">An amazing cat Vtuber artist and professional gamer!</p>
-                <img class="imgtuber" src="resources/images/chenna.png">
-            </div>
-        </div>
+            <div id="chenna" class="parallel vtuber" onclick="anim(this)">
+                <div class="colour" style="background: #1645C6"></div>
 
-        <div id="teru" class="parallel vtuber" onclick="anim(this);">
-            <div class="colour" style="background: #FFC02A"></div>
+                <div class="tab">
+                    <p class="sideways">CHENNA</p>
+                    <div class="img-links">
+                        <a href="https://www.twitter.com/_chenna_" target="_blank"><img class="center img-link" src="resources/images/twitter.png"></a>
+                        <a href="https://www.twitch.tv/chennakitty" target="_blank"><img class="center img-link" src="resources/images/twitch.png"></a>
+                    </div>
+                </div>
 
-            <div class="tab">
-                <p class="sideways">TERU</p>
-                <div class="img-links">
-                    <a href="https://www.twitter.com/terupancake" target="_blank"><img class="center img-link" src="resources/images/twitter.png"></a>
-                    <a href="https://www.twitch.tv/terupancake" target="_blank"><img class="center img-link" src="resources/images/twitch.png"></a>
+                <div class="bio">
+                    <p class="center">An amazing cat Vtuber artist and professional gamer!</p>
+                    <img class="imgtuber" src="resources/images/chenna.png">
                 </div>
             </div>
 
-            <div class="bio">
-                <p class="center">An amazing artist with a passion for all things Love Live!</p>
-                <img class="imgtuber center" src="resources/images/teru.png">
+            <div id="teru" class="parallel vtuber" onclick="anim(this);">
+                <div class="colour" style="background: #FFC02A"></div>
+
+                <div class="tab">
+                    <p class="sideways">TERU</p>
+                    <div class="img-links">
+                        <a href="https://www.twitter.com/terupancake" target="_blank"><img class="center img-link" src="resources/images/twitter.png"></a>
+                        <a href="https://www.twitch.tv/terupancake" target="_blank"><img class="center img-link" src="resources/images/twitch.png"></a>
+                    </div>
+                </div>
+
+                <div class="bio">
+                    <p class="center">An amazing artist with a passion for all things Love Live!</p>
+                    <img class="imgtuber center" src="resources/images/teru.png">
+                </div>
             </div>
+
+            <div id="info" class="parallel vtuber" style="width: 12vw">
+                <div class="colour" style="background: whitesmoke; float: right"></div>
+
+                <a class="twitter-timeline" data-width="5vw" data-height="100%" data-theme="dark" data-chrome="noscrollbar transparent nofooter" href="https://twitter.com/nyazelirecords?ref_src=twsrc%5Etfw">Tweets by Nyazeli Records</a>
+            </div>
+
+            <div class="parallel vtuber" style="background: #1D1B1D; width: 10vw; position: absolute; left: -5vw; z-index: 1;"></div>
         </div>
-
-        <div id="info" class="parallel vtuber" style="width: 12vw">
-            <div class="colour" style="background: whitesmoke; float: right"></div>
-
-            <a class="twitter-timeline" data-width="5vw" data-height="100%" data-theme="dark" data-chrome="noscrollbar transparent nofooter" href="https://twitter.com/nyazelirecords?ref_src=twsrc%5Etfw">Tweets by Nyazeli Records</a>
+        <div id="btm">
+            <p class="center" style="font-size: 11px">© NYAZELI RECORDS</p>
         </div>
-
-        <div class="parallel vtuber" style="background: #1D1B1D; width: 10vw; position: absolute; left: -5vw; z-index: 1;"></div>
-    </div>
-    <div id="btm">
-        <p class="center" style="font-size: 11px">© NYAZELI RECORDS</p>
-    </div>
 </body>
 </html>
