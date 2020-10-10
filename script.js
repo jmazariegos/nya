@@ -58,3 +58,7 @@ if(link.endsWith("#about")){
 $(".content").on("click", function (event) {
     event.stopPropagation();
 });
+
+$(".img-link").on("click", function (event) {
+    event.stopPropagation();
+});
