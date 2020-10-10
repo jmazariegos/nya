@@ -277,7 +277,7 @@ iframe {
 /*MOBILE*/
 @media only screen and (max-width: 600px) {
     a {
-        font-size: 100%;
+        font-size: 25px;
     }
 
     #vtubers {
