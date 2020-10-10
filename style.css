@@ -31,15 +31,15 @@ body {
 
 /*DESKTOP*/
 #vtubers {
-    visibility: visible;
+    display: block;
 }
 
 #mobile {
-    visibility: hidden;
+    display: none;
 }
 
 iframe {
-    visibility: visible;
+    display: block;
 }
 
 /*CLASSES*/
@@ -194,14 +194,16 @@ iframe {
 #vtubers {
     margin-top: 5px;
     width: 100vw;
-    height: calc(81vh - 5px);
+    height: calc(80vh - 5px);
     overflow: hidden;
     position: relative;
 }
 
 #btm {
+    position: absolute;
     width: 100vw;
-    height: 1vh;
+    height: 2vh;
+    bottom: 0;
 }
 
 #empty {
@@ -281,18 +283,25 @@ iframe {
     }
 
     #vtubers {
-        visibility: hidden !important;
+        display: none !important;
     }
 
     iframe {
-        visibility: hidden !important;
+        display: none !important;
     }
 
     #mobile {
-        visibility: visible;
+        display: block;
     }
 }
 
 /*CLASSES*/
 
 /*IDS*/
+#mobile {
+    margin-top: 5px;
+    width: 100vw;
+    height: calc(75vh - 5px);
+    overflow: hidden;
+    position: relative;
+}
