@@ -47,8 +47,7 @@ iframe {
 .center {
     display: block;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0 auto;
     background: none;
 }
 
@@ -152,8 +151,9 @@ iframe {
     position: absolute;
     border-radius: 10px;
     background: #1D1B1D;
-    width: 40vw;
-    height: 50vh;
+    width: 30vw;
+    height: 40vw;
+    max-height: 40vh;
     top: 0;
     left: 0;
     bottom: 0;
@@ -163,13 +163,13 @@ iframe {
 }
 
 .middle p {
-    width: 55%;
+    width: 80%;
     margin: auto;
     display: block;
 }
 
 .middle img {
-    width: 30%;
+    width: 20%;
     margin: auto;
     display: block;
 }
@@ -177,8 +177,7 @@ iframe {
 .middle {
     position: absolute;
     display: inline-block;
-    width: auto;
-    height: auto;
+    height: 50%;
     top: 0;
     right: 0;
     bottom: 0;
@@ -283,6 +282,10 @@ iframe {
         font-size: 25px;
     }
 
+    .content {
+        width: 70vw;
+    }
+
     #vtubers {
         display: none !important;
     }
@@ -297,12 +300,42 @@ iframe {
 }
 
 /*CLASSES*/
+.mtab {
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.mimg-links {
+    width: 100%;
+    height: 10%;
+}
+
+.mimg {
+    height: 100%;
+    width: 10%;
+    margin: auto;
+    display: inline-block;
+}
+
+.name {
+    color: black;
+    font-family: 'Source Sans Pro Regular', sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
 
 /*IDS*/
 #mobile {
-    margin-top: 5px;
+    margin-top: 10px;
     width: 100vw;
-    height: calc(75vh - 5px);
+    height: calc(80vh - 10px);
     overflow: hidden;
     position: relative;
 }
