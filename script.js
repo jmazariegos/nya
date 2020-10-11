@@ -5,27 +5,48 @@ function anim(e) {
     let vtubers = document.getElementsByClassName('vtuber');
     let bios = document.getElementsByClassName('bio');
     let found = false;
-    if (e.classList.contains('open')){
-        for(let i = 1; i < (1+numtubers); i++){
+    if (e.classList.contains('open')) {
+        for (let i = 1; i < (1 + numtubers); i++) {
             let $this = $(vtubers.item(i));
-            let $bio = $(bios.item(i-1));
-            if(vtubers.item(i).classList.contains('open')) {
+            let $bio = $(bios.item(i - 1));
+            if ($this.hasClass('open')) {
                 $this.removeClass('open').addClass('close');
                 $bio.removeClass('visible').addClass('invisible');
             }
         }
-    }else{
-        for(let i = 1; i < (1+numtubers); i++){
-            if(e.isEqualNode(vtubers.item(i))){
+    } else {
+        for (let i = 1; i < (1 + numtubers); i++) {
+            if (e.isEqualNode(vtubers.item(i))) {
                 found = true;
-                let $bio = $(bios.item(i-1));
+                let $bio = $(bios.item(i - 1));
                 $bio.removeClass('invisible').addClass('visible');
             }
-            if(found){
-                $this = $(vtubers.item(i));
+            if (found) {
+                let $this = $(vtubers.item(i));
                 $this.removeClass('close').addClass('open');
             }
         }
+    }
+}
+
+//CLICK ON MOBILE TAB
+function manim(index){
+    let vtubers = document.getElementsByClassName('mvtuber');
+    let $e = $(vtubers.item(index));
+    if ($e.hasClass('visible')){
+        $e.removeClass('visible').addClass('invisible');
+        $e.css("visibility", "hidden");
+    }else{
+        for (let i = 0; i < numtubers; i++) {
+            let $this = $(vtubers.item(i));
+            if ($this.hasClass('visible')) {
+                $this.removeClass('visible').addClass('invisible');
+                $this.css("visibility", "hidden");
+                break;
+            }
+        }
+        $e.css("visibility", "visible");
+        $e.removeClass('invisible').addClass('visible');
     }
 }
 
