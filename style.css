@@ -301,34 +301,49 @@ iframe {
 
 /*CLASSES*/
 .mtab {
-    width: 20%;
+    width: 25%;
     height: 100%;
-    display: inline-block;
     margin: 0;
     padding: 0;
 }
 
 .mimg-links {
-    width: 100%;
+    margin: auto;
     height: 10%;
 }
 
 .mimg {
-    height: 100%;
-    width: 10%;
+    width: 40px;
     margin: auto;
+}
+
+.mimgtuber {
     display: inline-block;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 60%;
 }
 
 .name {
+    text-align: center;
+    background: none;
     color: black;
     font-family: 'Source Sans Pro Regular', sans-serif;
+}
+
+.mvtuber {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+    visibility: hidden;
+    height: calc(80vh - 10px);
+    width: 100%;
+    opacity: 0;
+}
+
+.center-mimg{
+    display: flex;
+    justify-content: center
 }
 
 /*IDS*/
@@ -338,4 +353,9 @@ iframe {
     height: calc(80vh - 10px);
     overflow: hidden;
     position: relative;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
 }
