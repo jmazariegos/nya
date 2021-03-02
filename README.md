@@ -9,6 +9,6 @@ Here you'll see things like:
 * Basic CSS transformations and etc.
 * No scroll and making the page mobile friendly
 
-It isn't anything official and is actually just practice which is why all the art may like unprofessional, and may also never work on it again but it was fun!
+It isn't anything official and is actually just practice which is why all the art may look unprofessional, and may also never work on it again but it was fun!
 
 I also drew all the art, just a little bonus fact :)
