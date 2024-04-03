@@ -1,4 +1,6 @@
 # Nyazeli Records Mockup Website (Something I did to test out making an HTML/CSS/JS Website)
+https://jmazariegos.github.io/nya/
+
 Here is where I experimented and tried to learn more about HTML/CSS/JS in making a mockup website for a friend's company
 
 Here you'll see things like:
